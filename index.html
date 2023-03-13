@@ -1,4 +1,19 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Creative Studio</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="splash">
+        <h1 class="fade-in">Paper Creative Studio</h1>
+    </div>
+	
+<!DOCTYPE html>
 <html>
   <head>
     <title>Paper Creative Studio</title>
@@ -7,37 +22,40 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+	
     <header>
       <nav>
         <ul>
-          <li><a href="#">Main page</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="main">Main Page</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="projects">Projects</a></li>
+          <li><a href="contact">Contact</a></li>
+		  <li><a href="team">Our Team</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="hero">
+		<img src="pgs_no_background_black.png" width="300px" height=auto>
         <h1>Paper Creative Studio</h1>
         <p>Create the uncreated</p>
-        <a href="#" class="button">See our Products</a>
+        <a href="projects" class="button">See our Projects</a>
       </section>
       <section id="about">
-        <h2>O Firmie</h2>
+        <h2>O Nas</h2>
         <p>Opis firmy i jej historii</p>
       </section>
       <section id="services">
-        <h2>Oferta</h2>
+        <h2>Our Team</h2>
         <ul>
-          <li>Usługa 1</li>
-          <li>Usługa 2</li>
-          <li>Usługa 3</li>
-          <li>Usługa 4</li>
+          <li>Hubert Kiernożycki - project manager</li>
+          <li>Zuzanna Pawluk - 2D graphic</li>
+          <li>Kacper Strzelczyk - 3D and pixel graphic</li>
+          <li>Aniela Maciejek - 3D and pixel graphic</li>
         </ul>
       </section>
       <section id="contact">
-        <h2>Kontakt</h2>
+        <h2>Contact</h2>
         <form>
           <label for="name">Imię i Nazwisko:</label>
           <input type="text" id="name" name="name" required>
@@ -45,13 +63,18 @@
           <input type="email" id="email" name="email" required>
           <label for="message">Wiadomość:</label>
           <textarea id="message" name="message" required></textarea>
+		  <label for="submit"></label>
           <button type="submit">Wyślij</button>
         </form>
       </section>
     </main>
     <footer>
-      <p>© 2023 Nazwa Firmy. Wszelkie prawa zastrzeżone.</p>
+      <p>© 2023 Paper Creative Studio. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+    <script src="app.js"></script>
   </body>
 </html>
