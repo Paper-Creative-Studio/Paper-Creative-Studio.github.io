@@ -91,9 +91,25 @@ body {
   header nav li a:hover {
     background-color: #444;
   }
+
+  .hamburger{
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    float: right;
+    justify-content: center;
+  }
+
+  .hamburger:focus{
+    outline: none;
+  }
+  
   
  /* Styl głównego bloku treści */
-main {
+  main {  
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
@@ -169,4 +185,53 @@ main {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 5px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .nav-list{
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .nav-list.show{
+      display: flex;
+      width: 100%;
+      background-color: #222;
+      padding-bottom: 10px;
+
+    }
+
+    .hamburger{
+      display: block;
+      color: white;
+      padding: auto;
+
+    }
+
+    nav{
+      height: 24px;
+    }
+
+
+    .personal_data{
+      float: none;
+      width: 100%;
+    }
+
+    #personal_data_all{
+      height: auto;
+      width: 100%;
+      float: none;
+    }
+
+    .main_picture{
+      float: none;
+    }
+
+    #project-description{
+      float: left;
+      width: 100%;
+      display: block;
+    }
   }
