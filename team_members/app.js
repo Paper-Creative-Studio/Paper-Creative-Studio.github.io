@@ -16,13 +16,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
-// Pobierz przycisk hamburgera i listę nawigacji
-const navToggle = document.querySelector('.nav-toggle');
-const navList = document.querySelector('.nav-list');
-
-// Dodaj obsługę zdarzenia click do przycisku hamburgera
-navToggle.addEventListener('click', () => {
-  // Toggle klasy .nav-active na liście nawigacji
-  navList.classList.toggle('nav-active');
-});
