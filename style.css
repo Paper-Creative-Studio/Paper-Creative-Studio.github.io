@@ -60,7 +60,7 @@ body {
     padding: 10px;
   }
   
-  header nav ul {
+  /*header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -83,7 +83,76 @@ body {
   header nav li a:hover {
     background-color: #444;
   }
-  
+  */
+
+  /* Styl nawigacji dla urządzeń desktopowych */
+nav {
+  background-color: #363636;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Styl nawigacji dla urządzeń mobilnych */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    background-color: #363636;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .nav-toggle:hover {
+    cursor: pointer;
+  }
+
+  .nav-list {
+    display: none;
+    padding: 10px;
+    background-color: #363636;
+    color: #fff;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+  }
+
+  .nav-list li {
+    margin-bottom: 10px;
+  }
+
+  .nav-list a {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .nav-active .nav-list {
+    display: block;
+  }
+}
+
   /* Style dla sekcji hero */
   #hero {
     background-image: url('background.jpg');
@@ -193,8 +262,12 @@ body {
     /* Style dla sekcji team_member_short_2*/
     .team_member_short_2 {
       background-color: #d5d5d5;
-      padding: 100px 0;
+      /* padding: 100px 0;
       text-align: center;
+      height: 256px; */
+      display:flex ;
+      align-items: center;
+      justify-content: center;
     }
     
     .team_member_short_2 h2{
@@ -240,6 +313,9 @@ body {
   }
 
   #services li {
+    min-width: 300px;
+    max-width: 450px;
+    height: auto;
     margin: 0 10px;
     padding: 20px;
     border: 1px solid #bbb;
@@ -270,5 +346,19 @@ body {
     display: block;
     margin-bottom: 10px;
     font-size: 1.2rem;
+  }
+  
+  .avatar{
+    float: left;
+    padding-left: auto;
+    margin: 15px;
+  }
+  
+  .team_member_desc{
+    float: left;
+  }
+
+  #Hubert{
+
   }
   
