@@ -66,6 +66,10 @@ body {
     padding: 0;
     text-align: center;
   }
+
+  header nav{
+    flex-wrap: wrap;
+  }
   
   header nav li {
     display: inline-block;
@@ -83,7 +87,22 @@ body {
   header nav li a:hover {
     background-color: #444;
   }
-  
+
+  .hamburger{
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    float: right;
+    justify-content: center;
+  }
+
+  .hamburger:focus{
+    outline: none;
+  }
+
   /* Style dla sekcji hero */
   #hero {
     background-image: url('background.jpg');
@@ -175,8 +194,12 @@ body {
     /* Style dla sekcji team_member_short_1 */
     .team_member_short_1 {
       background-color: #e1e1e1;
+      /*
       padding: 100px 0;
-      text-align: center;
+      text-align: center;*/
+      display:flex ;
+      align-items: center;
+      justify-content: center;
     }
     
     .team_member_short_1 h2{
@@ -193,8 +216,12 @@ body {
     /* Style dla sekcji team_member_short_2*/
     .team_member_short_2 {
       background-color: #d5d5d5;
-      padding: 100px 0;
+      /* padding: 100px 0;
       text-align: center;
+      height: 256px; */
+      display:flex ;
+      align-items: center;
+      justify-content: center;
     }
     
     .team_member_short_2 h2{
@@ -240,6 +267,9 @@ body {
   }
 
   #services li {
+    min-width: 300px;
+    max-width: 450px;
+    height: auto;
     margin: 0 10px;
     padding: 20px;
     border: 1px solid #bbb;
@@ -272,3 +302,40 @@ body {
     font-size: 1.2rem;
   }
   
+  .avatar{
+    float: left;
+    padding-left: auto;
+    margin: 15px;
+  }
+  
+  .team_member_desc{
+    width: 30%;
+    float: left;
+  }
+
+  @media screen and (max-width: 767px) {
+    .nav-list{
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .nav-list.show{
+      display: flex;
+      width: 100%;
+      background-color: #222;
+      padding-bottom: 10px;
+      transition: top 0.5s;
+    }
+
+    .hamburger{
+      display: block;
+      color: white;
+      padding: auto;
+
+    }
+
+    nav{
+      height: 24px;
+    }
+  }
