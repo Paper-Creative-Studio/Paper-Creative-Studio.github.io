@@ -234,6 +234,14 @@ body {
       margin: 0 auto;
       max-width: 600px;
     }
+  
+  .readmore{
+    background-color: #e1e1e1; 
+    color: #000000; 
+    border: 1px solid #000000; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+  } 
 
   /* Style dla sekcji services */
   #services {
