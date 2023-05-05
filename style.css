@@ -105,7 +105,7 @@ body {
 
   /* Style dla sekcji hero */
   #hero {
-    background-image: url('background.jpg');
+
     background-size: cover;
     background-position: center;
     color: black;
