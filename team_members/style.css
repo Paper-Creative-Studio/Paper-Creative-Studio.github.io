@@ -112,6 +112,13 @@ body {
     outline: none;
   }
 
+
+  .profile_link{
+    color: black;
+    text-decoration: none;
+    
+  }
+
   /* Styl głównego bloku treści */
   main {
     max-width: 1000px;
