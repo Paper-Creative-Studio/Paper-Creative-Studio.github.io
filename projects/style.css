@@ -235,3 +235,8 @@ body {
       display: block;
     }
   }
+
+.profile_link{
+  text-decoration: none;
+  color: black;
+}
